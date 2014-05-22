@@ -139,7 +139,7 @@
 						<h2>Branding colors</h2>
 					</section>
 					<section>
-						<h2>Branding icons	</h2>
+						<h2>Branding icons</h2>
 					</section>
 					<section>
 						<h2>Touch feedback</h2>
@@ -165,6 +165,7 @@
 					<section>
 						<h2>Translucent bars</h2>
 						<p>
+							<img src="img/systembarswhite.jpg">
 						</p>
 					</section>
 					<section>
@@ -190,11 +191,12 @@
 						<h2 style="color: #000000; text-align: left; margin: -150px 0 0 -200px">IT'S APIs TIME!</h2>
 					</section>
 					<section class="andevcon-slide">
-						<h3>What about APIs?</h3>
+						<h3>What about APIs and some code?</h3>
 						<p>
 							<ul>
-								<li class="fragment">App Indexing</li>
+								<li class="fragment">Translucent bars</li>
 								<li class="fragment">Immersive Mode</li>
+								<li class="fragment">App Indexing</li>
 								<li class="fragment">Transitions API</li>
 								<li class="fragment">Closed captions</li>
 								<li class="fragment">Storage Access</li>
@@ -202,6 +204,40 @@
 								<li class="fragment">Printing API</li>
 								<li class="fragment">Step Sensors</li>
 							</ul>
+						</p>
+					</section>
+					<section>
+						<h2>Translucent bars</h2>
+						<br>
+						<p data-markdown>
+							<script type="text/template">
+							```
+							<resources>
+							    <style name="CustomActionBarTheme" parent="@android:style/Theme.Holo">
+							  
+							        <item name="android:windowActionBarOverlay">true</item>
+							  
+							    </style>
+							</resources>
+							```
+							</script>
+						</p>
+					</section>
+					<section>
+						<h2>but..what about Android 2.1+?</h2>
+						<br>
+						<p class="fragment" data-markdown>
+							<script type="text/template">
+							```
+							<resources>
+							    <style name="CustomActionBarTheme" parent="@android:style/Theme.AppCompat">
+							        <item name="android:windowActionBarOverlay">true</item>
+
+							        <item name="windowActionBarOverlay">true</item>
+							    </style>
+							</resources>
+							```
+							</script>
 						</p>
 					</section>
 					<section>
